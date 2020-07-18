@@ -7,8 +7,7 @@ pipeline {
       ORGANIZATION_NAME = "Kudadigital"
       YOUR_DOCKERHUB_USERNAME = "augeos" // (it doesn't matter if you don't have one)
 
-
-     REPOSITORY_TAG="${YOUR_DOCKERHUB_USERNAME}/${ORGANIZATION_NAME}-${SERVICE_NAME}:${BUILD_ID}"
+      REPOSITORY_TAG="${YOUR_DOCKERHUB_USERNAME}/${ORGANIZATION_NAME}-${SERVICE_NAME}:${BUILD_ID}"
    }
 
    stages {
