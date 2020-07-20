@@ -23,7 +23,7 @@ pipeline {
          }
       }
 
-      stage('Build and Push Image') {
+      stage('Build and Push Image to dockerhub') {
          steps {
            sh 'docker image build -t ${REPOSITORY_TAG} .'
            sh 'docker login -u "${YOUR_DOCKERHUB_USERNAME}" -p Lazio205!'
